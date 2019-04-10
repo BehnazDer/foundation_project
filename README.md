@@ -10,4 +10,4 @@ First Week Goal:
 1) Setting up the login/ register page
 2) Settinp up the database structure
 3) Understanding the login/register concept from Flask --> Deep diving into flask 
-4) Figuring out my database structure --> I don't build  a secure database so I need to figure out what are the security problems may occur 
+4) Figuring out my database structure --> I don't build  a secure database so I need to figure out what kind of security problems may occur 
