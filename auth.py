@@ -42,7 +42,7 @@ def register():
     elif user_password != user_repeatpassword:
         return render_template('auth/register.html', error= "Invalid Password")
          
-    elif cursor.execute('SELECT ID FROM users WHERE email = ? ', (user_email,)).fetchone() is not None:
+    elif cursor.execute('SELECT id FROM users WHERE email = ? ', (user_email,)).fetchone() is not None:
         error = 'User {} is already registered.'.format(user_email)
     if error is None:   
         cursor.execute("INSERT INTO users (name, email, username, password, repeatpassword) values(?, ?, ?, ?, ?)",(user_name, user_email, 
