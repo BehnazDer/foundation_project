@@ -1,8 +1,71 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Home Page{% endblock %}</h1>
+  <h1>{% block title %}{% endblock %}</h1>
 {% endblock %}
 <li>
     <a href="{{ url_for('.login') }}">Login</a>
 </li>
+
+{% block content %}
+    <section id= "welcome-section">
+        <h1>Welcome to the PawClubs!</h1>
+        <p>You can find the right services for your fluffy buddy with us</p>
+    </section>
+
+    <section id= "services">
+        <h1>Here is what we offer:</h1>
+        <div class="tiles">
+            <div class="service-tiles">
+                <a href="{{ url_for('.dogsitting') }}" target="_blank">Dog Sitting</a>
+                <img id="image-decoration" src="woman-4079085_1920.jpg" class="responsive">
+                <div>Dog Sitting</div>
+            </div>
+
+            <div class="service_tiles">
+                <a href="{{ url_for('.dogparty') }}" target="_blank">Dog Party</a>
+                <img id="image-decoration" src="new-years-day-1090770_1920.jpg" class="responsive">
+                <div>Dog Events</div>
+            </div>
+
+            <div class="service_tiles">
+                <a href="{{ url_for('.dogtraining') }}" target="_blank">Dog Training</a>
+                <img id="image_decoration" src="outdoors-3307889_1920.jpg" class="responsive">
+                <div>Dog Training</div>
+        </div>
+
+        <ul>
+            <li><a href="#welcome-section">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+        </ul>
+
+        <section id="contact-us">
+            <h1>CONTACT US</h1>
+            <p>For any clarification, question or business proposition, PawClubs team will be happy to help you.</p>
+            <p>We want to hear from you. Your opinion is absolutely valuable, so feel free to leave us your feedback!</p>
+        </section>
+
+        <div class="container">
+            <form action="/login">
+            <label for="fisrtname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your name...">
+              
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Write here ..." style="height:200px"></textarea>
+              
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+            
+        <section id="footer">
+            <h1>Pawclubs @ 2019 All Rights Reserved</h1>
+            <div class="button">
+            <a href="{{url_for('.FAQ')}}" target="_blank">FAQ</a>
+            </div>
+        </section>
+
+{% endblock %}

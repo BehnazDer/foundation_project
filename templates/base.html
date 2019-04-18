@@ -1,15 +1,15 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - my_project</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='stylehome.css') }}">
 <nav>
-  <h1>Paw Clubs</h1>
+  <h1></h1>
   <ul>
 </nav>
  {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('auth/logout') }}">Log Out</a>
     {% else %}
-   
       <li><a href="{{ url_for('.login') }}">Login</a>
     {% endif %}
   </ul>

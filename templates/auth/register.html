@@ -1,29 +1,31 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Register{% endblock %}</h1>
+  <h1>{% block title %}{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-<form method="post">
-<div class='bold-line'></div>
-<div class='container'>
-  <div class='window'>
-    <div class='overlay'></div>
-    <div class='content'>
-      <div class='welcome'>Hello There!</div>
-      <div class='subtitle'>Please fill in this form to create an account.</div>
-      <div class='input-fields'>
-        <input type='text' placeholder='Email' class='input-line full-width'></input>
-        <input type='email' placeholder='Password' class='input-line full-width'></input>
-        <input type='password' placeholder='Repeat Password' class='input-line full-width'></input>
-      </div>
-      <div><button type="submit" class="registerbtn">Register</button></div>
-      <div class="container signin">
-        <p>Already have an account? <a href="#">Log In</a>.</p>
+
+  <form method="post" action='/register'>
+  <div class='container'>
+    <div class='window'>
+      <div class='overlay'></div>
+      <div class='content'>
+        <div class='welcome'>Welcome!</div>
+        <div class='subtitle'>Please fill in this form to create an account.</div>
+        <div class='input-fields-reg'>
+          <input type='text' placeholder='Name' class='input-line full-width'></input>
+          <input type='email' placeholder='E-mail' class='input-line full-width'></input>
+          <input type='text' placeholder='Username' class='input-line full-width'></input>
+          <input type='text' placeholder='Password' class='input-line full-width'></input>
+          <input type='password' placeholder='Repeat Password' class='input-line full-width'></input>
+        </div>
+        <div><input type="Register" value="Register Now!"class='Regbtn full-width'></input></div>
+        <div class="question">
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</form>
+  </form>
 {% endblock %}
