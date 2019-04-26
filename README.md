@@ -12,9 +12,12 @@ These instructions will get you a copy of the project up and running on your loc
 - You need to install python3, flask, pip & virtualenv.
 
 To start, first create the virtual environment.
-
 ```
 python3 -m venv venv
+```
+Activate the virtual environment.
+```
+source venv/bin/activate
 ```
 
 
