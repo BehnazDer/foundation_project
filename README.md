@@ -24,10 +24,32 @@ Install Flask (Use pip)
 pip install Flask
 ```
 # Starting the Server
-Clone y repository on github via this command:
+Clone my repository on github via this command:
 ```
 git clone https://github.com/BehnazDer/foundation_project.git
 cd my_project
 ```
+If the virtual environment is not activated, first activate it :
+```
+source venv/bin/activate
+```
+Run Flask:
+```
+cd my_project
+FLASK_APP=auth.py
+flask run 
+```
+To run the server in the development mode add:
+```
+export FLASK_ENV= development
+flask run
+```
+Serving on http://127.0.0.1:5000
+
+
+
+
+
+
 
 
