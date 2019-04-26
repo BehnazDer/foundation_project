@@ -23,5 +23,11 @@ Install Flask (Use pip)
 ```
 pip install Flask
 ```
+# Starting the Server
+Clone y repository on github via this command:
+```
+git clone https://github.com/BehnazDer/foundation_project.git
+cd my_project
+```
 
 
