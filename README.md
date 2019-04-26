@@ -19,5 +19,9 @@ Activate the virtual environment.
 ```
 source venv/bin/activate
 ```
+Install Flask (Use pip)
+```
+pip install Flask
+```
 
 
