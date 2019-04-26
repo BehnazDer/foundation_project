@@ -1,10 +1,11 @@
-# foundation_project
+# PawClubs
+With Pawclubs I try to build a community mainly around dogowners and dogsitters in co-working spaces and dog-friendly companies inorder to make the life easier for dogs who are brought to the working spaces and the owners to catch up with their daily activities. Besides dogsitting, other services such as dog events, dog training, etc. are offred to the community members.
 - Apliccation name : Paw Clubs
 - Aplication Architecture :
 - Programming Language --> python/HTML-CSS
 - Framework --> Flask
 - Database Management System --> SQlite
-- !!! Design is not a priority now !!!
+
 
 First Week Goal:
 1) Setting up the login/ register page
