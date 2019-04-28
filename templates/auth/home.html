@@ -1,71 +1,84 @@
 {% extends 'base.html' %}
+{% block title %}Homepage{% endblock %}
 
-{% block header %}
-  <h1>{% block title %}{% endblock %}</h1>
+{% block header%}
+<link rel="stylesheet" href="{{ url_for('static', filename='stylehome.css') }}">
+<script src="{{ url_for('static', filename='slide.js') }}"></script>
 {% endblock %}
-<li>
-    <a href="{{ url_for('.login') }}">Login</a>
-</li>
 
 {% block content %}
-    <section id= "welcome-section">
-        <h1>Welcome to the PawClubs!</h1>
-        <p>You can find the right services for your fluffy buddy with us</p>
-    </section>
-
-    <section id= "services">
-        <h1>Here is what we offer:</h1>
-        <div class="tiles">
-            <div class="service-tiles">
-                <a href="{{ url_for('.dogsitting') }}" target="_blank">Dog Sitting</a>
-                <img id="image-decoration" src="woman-4079085_1920.jpg" class="responsive">
-                <div>Dog Sitting</div>
-            </div>
-
-            <div class="service_tiles">
-                <a href="{{ url_for('.dogparty') }}" target="_blank">Dog Party</a>
-                <img id="image-decoration" src="new-years-day-1090770_1920.jpg" class="responsive">
-                <div>Dog Events</div>
-            </div>
-
-            <div class="service_tiles">
-                <a href="{{ url_for('.dogtraining') }}" target="_blank">Dog Training</a>
-                <img id="image_decoration" src="outdoors-3307889_1920.jpg" class="responsive">
-                <div>Dog Training</div>
+          <section id= "welcome-section">
+            <h1>Welcome to the PawClubs!</h1>
+            <P> Your Dog Is in Safe Hands</p>
+          </section>
+          
+          <!-- slideshow container -->
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="{{ url_for('static', filename='image/doggo8.jpg') }}" style="width:100%">
         </div>
-
-        <ul>
-            <li><a href="#welcome-section">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-us">Contact</a></li>
-        </ul>
-
-        <section id="contact-us">
-            <h1>CONTACT US</h1>
-            <p>For any clarification, question or business proposition, PawClubs team will be happy to help you.</p>
-            <p>We want to hear from you. Your opinion is absolutely valuable, so feel free to leave us your feedback!</p>
-        </section>
-
-        <div class="container">
-            <form action="/login">
-            <label for="fisrtname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Your name...">
-              
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
-
-            <label for="comment">Comment</label>
-            <textarea id="comment" name="comment" placeholder="Write here ..." style="height:200px"></textarea>
-              
-            <input type="submit" value="Submit">
-            </form>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="{{ url_for('static', filename='image/doggo9.jpg') }}" style="width:100%">
         </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="{{ url_for('static', filename='image/doggo10.jpg') }}" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      <br>
+          <section id= "services">
+              <h1>Please Find your Desired Services below</h1>
+              <div class="tiles">
+                <div class="service-tiles">
+                  <a href="https://www.portfoliogen.com/mbishop/"target="_blank">
+        <img id="image-decoration" src="{{ url_for('static', filename='image/doggo4.jpg') }}" class="responsive">
+                  <div>Dog Sitting</div>
+                  </a>
+                </div>
+                <div class="service-tiles">
+                  <a href="https://pixel-mate.com/en/mobile-applications?gclid=EAIaIQobChMIzubH69KL4AIVk4KyCh2edQIFEAAYASAAEgKBd_D_BwE" target="_blank">
+         <img id="image-decoration" src="{{ url_for('static', filename='image/doggo3.jpg') }}" class="responsive">
+                    <div>Dog Events</div>
+                  </a>
+                </div>
+                <div class="service-tiles">
+                  <a href="https://pixel-mate.com/en/mobile-applications?gclid=EAIaIQobChMIzubH69KL4AIVk4KyCh2edQIFEAAYASAAEgKBd_D_BwE" target="_blank">
+         <img id="image-decoration" src="{{ url_for('static', filename='image/doggo2.jpg') }}" class="responsive">
+                    <div>Dog Training</div>
+                  </a>
+                </div>
+              </section>
+              <nav id="navbar">
+                    <a href="#welcome-section">About us</a>
+                    <a href="#services">Services</a>
+                    <a href="#profile">Contact</a>
+                         </nav> 
+              <section id="profile">
+                <h1>CONTACT US</h1>
+                <div class="container">
+        <form method="post" action="/???">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="subject">Feedback</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+                <footer>
+                  <h1>Pawclubs @ 2019 All Rights Reserved</h1>
+                </footer>
             
-        <section id="footer">
-            <h1>Pawclubs @ 2019 All Rights Reserved</h1>
-            <div class="button">
-            <a href="{{url_for('.FAQ')}}" target="_blank">FAQ</a>
-            </div>
-        </section>
-
-{% endblock %}
+                  {% endblock %}

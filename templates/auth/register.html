@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+{% block title %}Registration{% endblock %}
 
-{% block header %}
-  <h1>{% block title %}{% endblock %}</h1>
+{% block header%}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -14,18 +15,19 @@
         <div class='welcome'>Welcome!</div>
         <div class='subtitle'>Please fill in this form to create an account.</div>
         <div class='input-fields-reg'>
-          <input type='text' placeholder='Name' class='input-line full-width'></input>
-          <input type='email' placeholder='E-mail' class='input-line full-width'></input>
-          <input type='text' placeholder='Username' class='input-line full-width'></input>
-          <input type='text' placeholder='Password' class='input-line full-width'></input>
-          <input type='password' placeholder='Repeat Password' class='input-line full-width'></input>
+          <input type='text' name= 'name' placeholder='Name' class='input-line full-width'></input>
+          <input type='email' name= 'email' placeholder='E-mail' class='input-line full-width'></input>
+          <input type='text' name='username' placeholder='Username' class='input-line full-width'></input>
+          <input type='text' name='password' placeholder='Password' class='input-line full-width'></input>
+          <input type='password' name='repeatpassword' placeholder='Repeat Password' class='input-line full-width'></input>
         </div>
-        <div><input type="Register" value="Register Now!"class='Regbtn full-width'></input></div>
+        <div><input type="submit" value="Register Now!"class='Regbtn full-width'></input></div>
         <div class="question">
-          <p>Already have an account? <a href="#">Log In</a></p>
+          <p>Already have an account? <a href="/login">Log In</a></p>
         </div>
       </div>
     </div>
   </div>
   </form>
+  {{error}}
 {% endblock %}

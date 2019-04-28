@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}landingpage{% endblock %}
+
+{% block header%}
+<link rel="stylesheet" href="{{ url_for('static', filename='stylelanding.css') }}">
+{% endblock %}
+
+{% block content %}
+    <header id="showcase">
+        <h1>Welcome To The PawClubs</h1>
+        <a href="/register" class="button">Register</a>
+        <a href="/login" class="button">Login</a>
+    </header>
+     
+    {% endblock %}    
