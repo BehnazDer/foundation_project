@@ -1,7 +1,7 @@
 # PawClubs
 With Pawclubs, I try to build a community mainly around dogowners and dogsitters in co-working spaces and dog-friendly companies. The application aims to make the life easier for dogs who are brought to the working spaces and the owners to catch up with their daily activities. Besides dogsitting, other services such as dog events, dog training, etc. are offred to the community members.
 # About the Web Application
- Aplication Architecture :
+ Application Architecture :
 - Programming Language --> python3 / HTML-CSS
 - Web Framework --> Flask
 - Relational Database Management System --> SQLite
