@@ -44,7 +44,7 @@ To run the server in the development mode add:
 export FLASK_ENV= development
 flask run
 ```
-Serving on http://127.0.0.1:5000
+Serving on http://127.0.0.1:5000/
 
 
 
