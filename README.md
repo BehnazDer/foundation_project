@@ -1,52 +1,58 @@
 # PawClubs
-With Pawclubs, I try to build a community mainly around dogowners and dogsitters in co-working spaces and dog-friendly companies. The application aims to make the life easier for dogs who are brought to the working spaces and the owners to catch up with their daily activities. Besides dogsitting, other services such as dog events, dog training, etc. are offred to the community members.
-# About the Web Application
- Application Architecture :
-- Programming Language --> python3 / HTML-CSS / JavaScript
+With PawClubs, I aim to build a community between dog owners and dog sitters(lovers) mainly in co-working spaces and dog-friendly companies. PawClubs aims to create a safe & fun environment for all the community members including our fluffy buddies by offering in-house dogsitters and services such as dog trianings, dog events, etc.  
+
+# Application Architecture :
+- Programming Language --> Python3 /HTML-CSS/ JavaScript
 - Web Framework --> Flask
 - Relational Database Management System --> SQLite
+
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-# Prerequisites and Installing
-- You need to install python3, flask, pip & virtualenv.
+# Prerequisites
+Befor you start, you need to install:
+ - Python3
+ - virtualenv & pip
+ - Flask
 
-To start, first create the virtual environment.
+# Installation
+Start the installation by creating the virtual environment:
 ```
 python3 -m venv venv
 ```
-Activate the virtual environment.
-```
-source venv/bin/activate
-```
-Install Flask (Use pip).
+Install Flask :
 ```
 pip install Flask
 ```
-# Starting the Server
-Clone my repository on github via this command:
+Running the Flask:
 ```
-git clone https://github.com/BehnazDer/foundation_project.git
-cd my_project
-```
-If the virtual environment is not activated, first activate it :
-```
-source venv/bin/activate
-```
-Run Flask:
-```
-cd my_project
 FLASK_APP=auth.py
 flask run 
 ```
-To run the server in the development mode add:
+If you want to run the server in the development mode, add:
 ```
 export FLASK_ENV= development
 flask run
 ```
-Serving on http://127.0.0.1:5000/
+# Starting the Server
+clone my repository on github by:
+```
+git clone https://github.com/BehnazDer/foundation_project.git
+cd my_project
+```
+Activated the virtual environment if it is needed:
+```
+source venv/bin/activate
+```
+
+Start the Server:
+```
+python3 auth.py
+```
+Serving on : http://127.0.0.1:5000/
 
 
+Author : Behnaz Derakhshani
 
 
 
