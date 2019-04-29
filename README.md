@@ -1,5 +1,5 @@
 # PawClubs
-With PawClubs, I aim to build a community between dog owners and dog sitters(lovers) mainly in co-working spaces and dog-friendly companies. PawClubs aims to create a safe & fun environment for all the community members including our fluffy buddies by offering in-house dogsitters and services such as dog trianings, dog events, etc.  
+With PawClubs, I aim to build a community around dog owners and dog sitters(lovers) mainly in co-working spaces and dog-friendly companies. PawClubs aims to create a safe & fun environment for all the community members including our fluffy buddies by offering in-house dogsitters and services such as dog trianings, dog events, etc.  
 
 # Application Architecture :
 - Programming Language --> Python3 /HTML-CSS/ JavaScript
